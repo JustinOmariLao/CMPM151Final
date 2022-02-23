@@ -25,7 +25,12 @@ public class LapObject : TargetObject
     {
         if (!((layerMask.value & 1 << other.gameObject.layer) > 0 && other.CompareTag("Player")))
             return;
-       
+
+        if (CollectSound)
+        {
+            AudioUtility.CreateSFX(CollectSound, transform.position, AudioUtility.AudioGroups.Pickup, 0f);
+        }
+        
         Objective.OnUnregisterPickup?.Invoke(this);
     }
 }
