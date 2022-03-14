@@ -1,0 +1,1 @@
+DECLARE_EFFECT("JetEngine", Hv_JetEngine_UnityPlugin)
