@@ -1,0 +1,1 @@
+DECLARE_EFFECT("LaoSFX", Hv_LaoSFX_UnityPlugin)
