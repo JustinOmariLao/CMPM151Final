@@ -20,14 +20,15 @@ namespace KartGame.KartSystems
         void Start()
         {
             sped = 0;
-            sped = Mathf.Clamp(sped, 0, 1);
+          
             pd = GetComponent<Hv_JetEngine_AudioLib>();
         }
 
         // Update is called once per frame
         void Update()
         {
-            sped = arcadeKart.LocalSpeed();
+            sped = arcadeKart.LocalSpeed() *0.75F;
+            sped = Mathf.Clamp(sped, 0, 1);
             pd.SetFloatParameter(Hv_JetEngine_AudioLib.Parameter.Sped, sped);
         }
     }

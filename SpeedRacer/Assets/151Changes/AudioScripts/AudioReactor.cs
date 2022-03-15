@@ -50,7 +50,8 @@ public class AudioReactor : MonoBehaviour
 		}
 		scale = aveMag[0];
 
-		ScaleAround(orignalPos - new Vector3(0, 2.4F, 0), scale * originalTran);
+		scale += 0.25F;
+		ScaleAround(orignalPos, (scale * originalTran));
 
 
 
