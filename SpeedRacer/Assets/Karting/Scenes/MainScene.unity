@@ -15843,6 +15843,8 @@ GameObject:
   - component: {fileID: 1687723348}
   - component: {fileID: 1687723347}
   - component: {fileID: 1687723349}
+  - component: {fileID: 1687723351}
+  - component: {fileID: 1687723350}
   m_Layer: 0
   m_Name: BackgroundMusic
   m_TagString: Untagged
@@ -15857,11 +15859,11 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687723346}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -9116393239106031902, guid: fcc71635aab95ff4fbdf1880bf2afa2f,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 1939f7149c0fae14a891ac314cb2e8f3, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.4
   m_Pitch: 1
@@ -15968,11 +15970,39 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687723346}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 06f4915d9290cd84291a966fbf2cc504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1687723350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687723346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa848fa1e8dcea46b103f27757ffa50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1687723351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687723346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1e2f54c5632b14ca530027dd9c8d29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drums: 0.5
+  melody: 0.5
+  metro: 0.5
+  vamp: 0.5
 --- !u!1001 &1693743624
 PrefabInstance:
   m_ObjectHideFlags: 0

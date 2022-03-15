@@ -1,0 +1,1 @@
+DECLARE_EFFECT("musicMaster", Hv_musicMaster_UnityPlugin)
