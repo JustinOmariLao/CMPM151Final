@@ -43,9 +43,11 @@ extern "C" {
 #pragma mark - Heavy Context
 #endif
 
+typedef enum {
+  HV_LAOSFX_PARAM_IN_BUTTONSOUND = 0xD27DD130, // buttonSound
+} Hv_LaoSFX_ParameterIn;
 
 typedef enum {
-  HV_LAOSFX_EVENT_IN_BUTTONSOUND = 0xD27DD130, // buttonSound
   HV_LAOSFX_EVENT_IN_CHECKPOINTSOUND = 0xCC6D2A59, // checkPointSound
   HV_LAOSFX_EVENT_IN_LAPSOUND = 0x5F10083B, // lapSound
 } Hv_LaoSFX_EventIn;

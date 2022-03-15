@@ -38,6 +38,7 @@
 namespace Hv_LaoSFX_UnityPlugin {
 
   enum Param {
+    P_BUTTONSOUND,
     P_NUM_HV_PARAMS_
   };
 
@@ -53,6 +54,7 @@ namespace Hv_LaoSFX_UnityPlugin {
     definition.paramdefs = new UnityAudioParameterDefinition[numparams];
     // channels will be set to 0 if numInputChannels > 0 else it will be set to numOutputChannels
     definition.channels = 2;
+    RegisterParameter(definition, "buttonSound", "", 0.0f, 1.0f, 0.5f, 1.0f, 1.0f, P_BUTTONSOUND, "buttonSound");
     return numparams;
   }
 
@@ -76,6 +78,7 @@ namespace Hv_LaoSFX_UnityPlugin {
     EffectData::Data *data = &state->GetEffectData<EffectData>()->data;
 
     switch (index) {
+      case P_BUTTONSOUND: data->context->sendFloatToReceiver(Heavy_LaoSFX::Parameter::In::BUTTONSOUND, value); break;
       default: return UNITY_AUDIODSP_ERR_UNSUPPORTED;
     }
 
